@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "beskrivning": {
+      "type": "blocks"
+    },
+    "bild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "starttid": {
+      "type": "datetime"
+    },
+    "sluttid": {
+      "type": "datetime"
+    },
+    "plats": {
+      "type": "string"
+    },
+    "extern_bokningslank": {
+      "type": "string"
+    },
+    "curated": {
+      "type": "boolean"
+    },
+    "stad": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stad.stad"
+    },
+    "geoposition": {
+      "type": "component",
+      "repeatable": false,
+      "component": "event.geoposition"
+    },
+    "partner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::partner.partner"
+    }
+  }
+}

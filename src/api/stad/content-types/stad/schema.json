@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stads",
+  "info": {
+    "singularName": "stad",
+    "pluralName": "stads",
+    "displayName": "Stad"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Stad": {
+      "type": "string"
+    }
+  }
+}

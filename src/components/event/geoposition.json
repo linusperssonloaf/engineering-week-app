@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_event_geopositions",
+  "info": {
+    "displayName": "Geoposition"
+  },
+  "options": {},
+  "attributes": {
+    "latitud": {
+      "type": "decimal"
+    },
+    "longitud": {
+      "type": "decimal"
+    }
+  }
+}

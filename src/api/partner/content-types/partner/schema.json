@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "namn": {
+      "type": "string"
+    },
+    "logotyp": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "beskrivning": {
+      "type": "blocks"
+    },
+    "webbplats": {
+      "type": "string"
+    },
+    "kontaktmail": {
+      "type": "email"
+    }
+  }
+}
